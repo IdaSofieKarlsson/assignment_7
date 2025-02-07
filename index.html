@@ -6,32 +6,48 @@
     <title>Duck Form</title>
     <!--normalize css link-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--google fonts for Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div>
-        <form class="duck-form" action="">
-            <label for="full-name">FULL NAME</label>
-            <input type="text" placeholder="First Name Last Name" name="full-name" required minlength="3">
-            
-            <label for="email">EMAIL</label>
-            <input type="email" placeholder="Your Email" name="email" required>
-            
-            <label for="message-drop-down">MESSAGE REGARDING</label>
-            <select name="message-drop-down" id="message-drop-down">
-                <option value="duck-purchase">Duck purchase</option>
-                <option value="delivery-issues">Delivery issues</option>
-                <option value="return-of-duck">Return of duck</option>
-                <option value="payment-issues">Payment issues</option>
-                <option value="customer-service" selected>Customer service</option>
-            </select>
-            
-            <label for="message">MESSAGE</label>
-            <textarea name="message" id="" cols="30" rows="5" required minlength="1"></textarea>
-
-            <button class="submit-btn" type="submit" >Submit Form</button>                                  <!--disabled, använda? -->
-        </form>
-        <img src="images/hiclipart-2-duck.png" alt="a yellow duck" width="663px" height="603px">
+    <div class="container-form">
+        <div class="container-form-red">
+            <div class="duck-form">
+                <form action="">
+                    <div class="form-label-n-input">
+                        <label for="full-name">FULL NAME</label>
+                        <input type="text" placeholder="First Name Last Name" name="full-name" required minlength="3">
+                    </div>
+                    <div class="form-label-n-input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                    </div>
+                    <div class="form-label-n-input">
+                        <label for="message-drop-down">MESSAGE REGARDING</label>
+                        <select name="message-drop-down" id="message-drop-down">
+                            <option value="duck-purchase">Duck purchase</option>
+                            <option value="delivery-issues">Delivery issues</option>
+                            <option value="return-of-duck">Return of duck</option>
+                            <option value="payment-issues">Payment issues</option>
+                            <option value="customer-service" selected>Customer service</option>
+                        </select>
+                    </div>
+                    <div class="form-label-n-input">
+                        <label for="message">MESSAGE</label>
+                        <textarea name="message" id="" cols="30" rows="5" required minlength="1"></textarea>
+                    </div>
+                    <button class="submit-btn" type="submit" >Submit Form</button>                                  <!--disabled, använda? -->
+                </form>
+            </div>
+        </div>
+        <div class="container-form-orange">
+            <img src="images/hiclipart-2-duck.png" alt="a yellow duck" width="133px" height="121px">
+            <img src="images/hiclipart-2-duck.png" alt="a yellow duck" width="133px" height="121px">
+            <img src="images/hiclipart-2-duck.png" alt="a yellow duck" width="133px" height="121px">
+        </div>
     </div>
     
 </body>
