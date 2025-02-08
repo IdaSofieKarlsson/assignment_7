@@ -1,10 +1,7 @@
-/*font-family: "Roboto", serif;*/
-
 body {
    background-color: #9DBEBB;
 }
 .container-form {
-   background-color: #BE0909;
    z-index: -1;
    max-width: 954px;
    width: 100%;
@@ -19,118 +16,101 @@ body {
    left: 0;
    right: 0;
    margin: auto;
-
 }
 
-
-
+/*this container contains the form*/
 .container-form-red {
    background-color: #BE0909;
    max-width: 609px;
    width: 100%;
    min-height: 594px;
    height: 100%;
-   /*display: flex;
-   justify-items: center;
-   align-items: center;*/
-
+   border-radius: 90px 0px 0px 90px;
 }
-
 .duck-form {
-   z-index: 1;
    max-width: 400px;
    width: 100%;
    min-height: 466px;
    height: 100%;
-   
    position: relative;
-   top:50%;
-   bottom: 50%;
+   top:0;
+   bottom: 0;
    left: 0;
    right: 0;
    margin: auto;
-   
+   margin-top: 64px;
+   margin-bottom: 64px;
    display: flex;
    flex-direction: column;
 }
-
 .form-label-n-input {         
    display: flex;
    flex-direction: column;
+   max-height: 72px;
+   height: 100%;
+}
+label {
+   color: #FEFFFF;
+   font-family: "Roboto", serif;
+   font-size: 18px;
+   line-height: auto;
+   letter-spacing: 10%;
+}
+input, option, textarea, .default-text {
+   color: #FEFFFF;
+   font-family: "Roboto", serif;
+   font-size: 18px;
+   line-height: auto;
+   letter-spacing: 30%;
+   background-color: #BE0909;
+   cursor: text;
+   border: none;
+}
+textarea {
+   resize: none;
+}
+.line {
+   width: 400px;
+   max-width: 100%;
+   height: 1px;
+   max-height: 100%;
+   background-color: #9DBEBB;
+   margin-top: 1px;
+   margin-bottom: 25px;
+}
+.submit-btn {
+   max-width: 202px;
+   width: 100%;
+   max-height: 48px;
+   height: 100%;
+   margin-top: 25px;
+   margin-left: 99px;    /*det funkar, men man ska inte lösa problemen med margin > 50px... */
+   margin-right: 99px;
+   color: #FEFFFF;
+   font-family: "Roboto", serif;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: auto;
+   letter-spacing: 10%;
+   background-color: #468189;
+   border-radius: 40px;
+   cursor: pointer;
 }
 
-
-
-
-.container-form-orange {         /*img inside this container*/
+/*this container contains the images*/
+.container-form-orange {
    background-color: #FFB039;
    max-width: 345px;
    width: 100%;
    min-height: 594px;
    height: 100%;
+   border-radius: 0px 90px 90px 0px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.test-form {
-    background-color: antiquewhite;
-    max-width: 1110px;
-    width: 100%;
-    height: 1000px;
-    display: flex;
+img {
+   cursor: crosshair;
+   caret-color: #BE0909;
 }
-
-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: blueviolet;
-    font-size: 16px;
-}
-
- .test-btn {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: blueviolet;
-    font-size: 36px;
-    max-width: 300px;
-    width: 100%;
-    min-height: 100px;
-    
-    border-radius: 45px;
- }*/
-
- /*
- för att köra över default form style: 
- 1: normalize css 
- 2. ex checkbox 
-    a: sätt checkbox till opacity: 0
-    b: placera vår checkbox ovanpå med position: absolute   video 17:35 
-    obs använd inte visability
-
-    använd cursor: 
-
-    
- */
-

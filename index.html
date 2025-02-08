@@ -19,13 +19,15 @@
                 <form action="">
                     <div class="form-label-n-input">
                         <label for="full-name">FULL NAME</label>
-                        <input type="text" placeholder="First Name Last Name" name="full-name" required minlength="3">
+                        <input class="default-text" type="text" placeholder="First Name Last Name" name="full-name" required minlength="3">
                     </div>
+                    <div class="line"></div>
                     <div class="form-label-n-input">
                         <label for="email">EMAIL</label>
-                        <input type="email" placeholder="Your Email" name="email" required>
+                        <input class="default-text" type="email" placeholder="Your Email" name="email" required>
                     </div>
-                    <div class="form-label-n-input">
+                    <div class="line"></div>
+                    <div class="form-label-n-input message-drop-down">
                         <label for="message-drop-down">MESSAGE REGARDING</label>
                         <select name="message-drop-down" id="message-drop-down">
                             <option value="duck-purchase">Duck purchase</option>
@@ -35,11 +37,13 @@
                             <option value="customer-service" selected>Customer service</option>
                         </select>
                     </div>
+                    <div class="line"></div>
                     <div class="form-label-n-input">
                         <label for="message">MESSAGE</label>
-                        <textarea name="message" id="" cols="30" rows="5" required minlength="1"></textarea>
+                        <textarea name="message" id="" required minlength="1"></textarea>
                     </div>
-                    <button class="submit-btn" type="submit" >Submit Form</button>                                  <!--disabled, använda? -->
+                    <div class="line"></div>
+                    <button class="submit-btn" type="submit" >SEND MESSAGE</button>
                 </form>
             </div>
         </div>
@@ -51,40 +55,3 @@
     </div>
     
 </body>
-
-<!--<div class="testing-with-btn"> testing while listening to lesson. ignore this for assignment
-        good form practice: 
-        only needed info
-        as short as possible
-        easy to follow
-        special styling for each section
-        styling for name, and fill in placeholder-text
-        hoover-style for submit-btn
-        change form area when hoover over, change curser style when in are för writing something, can also add border 
-        autofocus som attribut placerar musmarkör i valt fält. bra/dåligt... 
-
-        Form validation: 
-        1 - rätt type
-        2 - label ökar userbility
-        
-        <form class="test-form" action="">
-            <label for="email">Type Your Email:</label>
-            <input type="email" placeholder="Your Email Here" required name="email">
-            <label for="password">Type Your Password</label>
-            <input type="password" placeholder="password will only display *" name="password" id="" required minlength="5">
-            <textarea name="message" id="" cols="15" rows="5" maxlength="3"></textarea>
-            <label for="colors">Choose your favorite color: </label>
-            <select name="colors" id="" multiple>
-                <option value="white">White</option>
-                <option value="yellow">yellow</option>
-                <option value="red" selected>Red</option>
-                <option value="blue">Blue</option>
-            </select>
-            <label for="checkbox">I like this form! </label>
-            <input type="checkbox" checked>
-            <button class="test-btn" type="submit" disabled >Skicka In!</button>
-        </form> 
-    </div>-->
-
-
-</html>
