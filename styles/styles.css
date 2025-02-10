@@ -27,7 +27,8 @@ body {
    height: 100%;
    border-radius: 90px 0px 0px 90px;
 }
-.duck-form {
+
+form {
    max-width: 400px;
    width: 100%;
    min-height: 466px;
@@ -81,11 +82,10 @@ textarea {
 .submit-btn {
    max-width: 202px;
    width: 100%;
-   max-height: 48px;
+   min-height: 48px;
    height: 100%;
    margin-top: 25px;
-   margin-left: 99px;    /*det funkar, men man ska inte lösa problemen med margin > 50px... */
-   margin-right: 99px;
+   align-self: center;
    color: #FEFFFF;
    font-family: "Roboto", serif;
    font-size: 18px;
